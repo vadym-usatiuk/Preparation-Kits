@@ -61,12 +61,23 @@ class Result_014 {
         }
         return valleys;
     }
+
+    public static void testCountingValleys() {
+        int steps = 8;
+        String path = "UDDDUDUU";
+        int result = Result_014.countingValleys(steps, path);
+        System.out.println("Number of valleys traversed: " + result);
+    }
 }
 
 
 public class Solution_014 {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        //local
+        Result_014.testCountingValleys();
+
+        /*BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int steps = Integer.parseInt(bufferedReader.readLine().trim());
@@ -79,7 +90,7 @@ public class Solution_014 {
         bufferedWriter.newLine();
 
         bufferedReader.close();
-        bufferedWriter.close();
+        bufferedWriter.close();*/
     }
 }
 
