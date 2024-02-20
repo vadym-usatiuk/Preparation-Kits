@@ -86,6 +86,38 @@ public class Solution_017 {
     public static void main(String[] args) throws IOException {
         //local
         Result_017.testFlippingMatrix();
+
+        // Test case 1: Matrix with all equal elements
+        List<List<Integer>> matrix1 = Arrays.asList(
+                Arrays.asList(1, 1, 1, 1),
+                Arrays.asList(1, 1, 1, 1),
+                Arrays.asList(1, 1, 1, 1),
+                Arrays.asList(1, 1, 1, 1)
+        );
+        int result1 = Result_017.flippingMatrix(matrix1);
+        System.out.println("Test case 1: " + result1); // Expected output: 4 (maximal sum)
+
+        // Test case 2: Matrix with some alternating elements
+        List<List<Integer>> matrix2 = Arrays.asList(
+                Arrays.asList(1, 2, 1, 2),
+                Arrays.asList(2, 1, 2, 1),
+                Arrays.asList(1, 2, 1, 2),
+                Arrays.asList(2, 1, 2, 1)
+        );
+        int result2 = Result_017.flippingMatrix(matrix2);
+        System.out.println("Test case 2: " + result2); // Expected output: 4 (maximal sum)
+
+        // Test case 3: Matrix with increasing elements
+        List<List<Integer>> matrix3 = Arrays.asList(
+                Arrays.asList(1, 2, 3, 4),
+                Arrays.asList(5, 6, 7, 8),
+                Arrays.asList(9, 10, 11, 12),
+                Arrays.asList(13, 14, 15, 16)
+        );
+        int result3 = Result_017.flippingMatrix(matrix3);
+        System.out.println("Test case 3: " + result3); // Expected output: 34 (maximal sum)
+
+
 //        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 //        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 //
