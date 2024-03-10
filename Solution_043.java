@@ -58,10 +58,6 @@ public class Solution_043 {
         int result = Result_043.sansaXor(arr);
         System.out.println(result); // Output: 0
 
-        List<Integer> arr2 = Arrays.asList(1, 2, 3, 4, 5);
-        int result2 = Result_043.sansaXor(arr2);
-        System.out.println(result2); // Output: 7
-
 // BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 //        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 //
