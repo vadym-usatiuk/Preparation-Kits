@@ -39,7 +39,7 @@ Return First. Function Description Complete the misereNim function in the editor
  removing the only stone in the second pile. So first wins. In the second testcase,
  the series of moves can be depicted as :
 */
-class Result_048 {
+class Result_047 {
 
     /*
      * Complete the 'misereNim' function below.
@@ -96,7 +96,7 @@ public class Solution_047 {
                         .map(Integer::parseInt)
                         .collect(toList());
 
-                String result = Result_048.misereNim(s);
+                String result = Result_047.misereNim(s);
 
                 bufferedWriter.write(result);
                 bufferedWriter.newLine();
