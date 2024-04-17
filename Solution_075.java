@@ -25,6 +25,7 @@ STDIN       Function
 4 3 2       h2 = [4, 3, 2]
 1 1 4 1     h3 = [1, 1, 4, 1]
 Sample Output
+5
 */
 class Result_075 {
 
