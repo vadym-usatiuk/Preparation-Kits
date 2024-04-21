@@ -63,7 +63,7 @@ public class Solution_079 {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        int result = Result.chiefHopper(arr);
+        int result = Result_079.chiefHopper(arr);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
