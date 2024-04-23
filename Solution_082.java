@@ -76,7 +76,7 @@ public class Solution_082 {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        List<String> result = Result.weightedUniformStrings(s, queries);
+        List<String> result = Result_082.weightedUniformStrings(s, queries);
 
         bufferedWriter.write(
                 result.stream()
