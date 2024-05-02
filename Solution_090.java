@@ -2,13 +2,7 @@
 //O(n log n)
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
 import java.util.stream.*;
 
 import static java.util.stream.Collectors.joining;
@@ -20,7 +14,7 @@ Input Format The first line contains a single integer n, the size of arr. The ne
 Explanation 2 It is impossible to sort by one single operation. Sample Input 3 6 15 4 3 26 Sample Output 3 yes reverse 2 5 Explanation 3 You can reverse the sub-array d[2...5]="5432", then the array becomes sorted.
 */
 
-class Result_90 {
+class Result_090 {
 
     /*
      * Complete the 'almostSorted' function below.
@@ -74,7 +68,7 @@ class Result_90 {
     }
 }
 
-public class Solution_90 {
+public class Solution_090 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -84,7 +78,7 @@ public class Solution_90 {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        Result_90.almostSorted(arr);
+        Result_090.almostSorted(arr);
 
         bufferedReader.close();
     }
