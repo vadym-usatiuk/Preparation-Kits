@@ -19,7 +19,7 @@ import static java.util.stream.Collectors.toList;
 
 
 
-class Result_89 {
+class Result_089 {
 
     /*
      * Complete the 'pairs' function below.
@@ -47,7 +47,7 @@ class Result_89 {
     }
 }
 
-public class Solution_89 {
+public class Solution_089 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -62,7 +62,7 @@ public class Solution_89 {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        int result = Result_89.pairs(k, arr);
+        int result = Result_089.pairs(k, arr);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
