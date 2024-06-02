@@ -25,16 +25,12 @@ public class Solution_089 {
          */
 
         public static int pairs(int k, List<Integer> arr) {
-            Set<Integer> values = new HashSet<>(arr);
+            Set<Integer> valueSet = new HashSet<>(arr);
             int count = 0;
             for (int num : arr) {
-                if (values.contains(num + k)) {
+                if (valueSet.contains(num + k)) {
                     count++;
                 }
-                if (values.contains(num - k)) {
-                    count++;
-                }
-                values.remove(num);
             }
             return count;
         }
